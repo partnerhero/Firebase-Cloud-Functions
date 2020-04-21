@@ -7,12 +7,6 @@ import server from './server';
 
 admin.initializeApp();
 
-type Context = {
-    admin: object;
-};
-
-const Context: Context = { admin };
-
 Sentry.init({
     environment: process.env.NODE_ENV || 'production',
 });
@@ -22,7 +16,7 @@ Sentry.configureScope((scope) => {
 });
 
 // HTTP SERVER
-exports.httpServer = functions.https.onRequest(server(Context));
+exports.httpServer = functions.https.onRequest(server);
 
 /************************************
     CRON JOBS             

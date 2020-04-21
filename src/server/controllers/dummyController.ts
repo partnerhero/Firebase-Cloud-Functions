@@ -1,10 +1,10 @@
 import { dummyGet, dummyPost } from '../methods/dummyMethods';
 
-const metricsController = (context: object) => ({
+const metricsController = {
     '/dummyRoute': {
-        get: dummyGet(context),
-        post: dummyPost(context),
+        get: dummyGet,
+        post: dummyPost,
     },
-});
+};
 
 export default metricsController;
