@@ -3,8 +3,8 @@ Boilerplate for projects that use Firebase [Cloud Functions](https://firebase.go
 
 Some of the stuff that comes out of the box~
 
-- Built-in Express http server
-- Examples for [trigger/cron functions] (https://firebase.google.com/docs/functions/firestore-events)
+- Built-in Express-based http server
+- Examples for [trigger/cron functions](https://firebase.google.com/docs/functions/firestore-events)
 - Typescript
 
 This boilerplate can be used for both Realtime Database and Firestore projects.
