@@ -3,7 +3,6 @@ import * as functions from 'firebase-functions';
 import * as Sentry from '@sentry/node';
 import * as admin from 'firebase-admin';
 
-// import { syncWithBambooHR } from './syncExternalAPIs';
 import server from './server';
 
 admin.initializeApp();
