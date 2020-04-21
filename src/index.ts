@@ -8,7 +8,7 @@ import server from './server';
 admin.initializeApp();
 
 Sentry.init({
-    environment: process.env.NODE_ENV || 'production',
+    environment: process.env.NODE_ENV || 'development',
 });
 
 Sentry.configureScope((scope) => {
